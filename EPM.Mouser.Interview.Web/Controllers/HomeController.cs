@@ -1,14 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EPM.Mouser.Interview.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EPM.Mouser.Interview.Web.Controllers
 {
     [Route("")]
     public class HomeController : Controller
     {
-        [HttpGet]
-        public IActionResult Index()
+        private readonly WarehouseApi _warehouseApi;
+        public HomeController (IWarehouseRepository warehouseRepository )
         {
-            return View();
+            _warehouseApi = new WarehouseApi(warehouseRepository);
         }
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            
+            var products = await _warehouseApi.GetPublicInStockProducts();
+            return View(products);
+        }
+       
     }
 }

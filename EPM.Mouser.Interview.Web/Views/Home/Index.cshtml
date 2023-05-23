@@ -1,4 +1,7 @@
-﻿@{
+﻿using EPM.Mouser.Interview.Models;
+@model List<EPM.Mouser.Interview.Models.Product>;
+
+@{
     ViewData["Title"] = "Test Page";
 }
 
@@ -10,9 +13,73 @@
     - use the bootstrap table styling
     - Available stock = Total Stock - Reserved Stock
     - Columns shown:
-        - action => with a link to a placeholder product detail page. 
+        - action => with a link to a placeholder product detail page.
         - Name
         - Total Amount in stock
         - Available stock (this should be orange if < 10 and red < zero)
 
 *@
+
+
+
+<section class="intro">
+    <div class="h-100">
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative; height: 700px">
+
+                                    <table class="table mb-0 ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Action</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Total Amount in stock</th>
+                                                <th scope="col">Available stock</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                var availableStock = item.InStockQuantity - item.ReservedQuantity;
+                                                <tr class="@GetStockClass(availableStock)">
+                                                    <td> <a href="@Url.Action("Products", "Product")" class="link-primary">Product Page</a></td>
+                                                    <td>@item.Name</td>
+                                                    <td>@item.InStockQuantity</td>
+                                                    <td>@availableStock</td>
+                                                </tr>   
+                                            }
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@functions {
+    public string GetStockClass(int availableStock)
+    {
+        if (availableStock < 10)
+        {
+            return "table-warning";
+        }
+        else if (availableStock < 0)
+        {
+            return "table-danger";
+        }
+        else
+        {
+            return "";
+        }
+    }
+}
+

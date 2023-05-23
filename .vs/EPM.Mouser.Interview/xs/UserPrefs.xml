@@ -1,0 +1,99 @@
+﻿<Properties StartupConfiguration="{6FA7BEF1-96A3-44B7-A1C4-52193DB39B63}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EPM.Mouser.Interview.Tests/WarehouseApiTests.cs">
+    <Files>
+      <File FileName="EPM.Mouser.Interview.Web/Program.cs" Line="15" Column="52" />
+      <File FileName="EPM.Mouser.Interview.Web/Controllers/HomeController.cs" Line="6" Column="13" />
+      <File FileName="EPM.Mouser.Interview.Web/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="EPM.Mouser.Interview.Web/Views/Home/Index.cshtml" Line="59" Column="16" />
+      <File FileName="EPM.Mouser.Interview.Web/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="EPM.Mouser.Interview.Web/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="EPM.Mouser.Interview.Web/Pages/Error.cshtml" />
+      <File FileName="EPM.Mouser.Interview.Web/Properties/launchSettings.json" />
+      <File FileName="EPM.Mouser.Interview.Web/appsettings.json" />
+      <File FileName="EPM.Mouser.Interview.Tests/UnitTest1.cs" Line="39" Column="18" />
+      <File FileName="EPM.Mouser.Interview.Tests/Usings.cs" />
+      <File FileName="EPM.Mouser.Interview.Web/wwwroot/css/site.css" />
+      <File FileName="EPM.Mouser.Interview.Web/wwwroot/js/site.js" />
+      <File FileName="EPM.Mouser.Interview.Web/Controllers/WarehouseApi.cs" Line="283" Column="29" />
+      <File FileName="EPM.Mouser.Interview.Web/appsettings.Development.json" />
+      <File FileName="EPM.Mouser.Interview.Web/Views/Home/Products.cshtml" Line="11" Column="1" />
+      <File FileName="EPM.Mouser.Interview.Web/Controllers/ProductController.cs" Line="12" Column="1" />
+      <File FileName="EPM.Mouser.Interview.Web/Pages/Shared/_Layout.cshtml" Line="31" Column="40" />
+      <File FileName="EPM.Mouser.Interview.Web/Pages/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="EPM.Mouser.Interview.Web/Pages/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EPM.Mouser.Interview" expanded="True">
+            <Node name="DLL" expanded="True" />
+            <Node name="EPM.Mouser.Interview.Tests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="WarehouseApiTests.cs" selected="True" />
+            </Node>
+            <Node name="EPM.Mouser.Interview.Web" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="AssemblyDependencies" expanded="True" />
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Product" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="EPM.Mouser.Interview" expanded="True">
+            <Node name="EPM.Mouser.Interview.Tests" expanded="True">
+              <Node name="EPM.Mouser.Interview.Tests" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="AddNewProduct_WithValidRequest_ReturnsSuccessResponse" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.EPM.Mouser.Interview.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Web/Controllers/WarehouseApi.cs" relfile="EPM.Mouser.Interview.Web/Controllers/WarehouseApi.cs" line="65" column="1" />
+      <Breakpoint file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Web/Controllers/ProductController.cs" relfile="EPM.Mouser.Interview.Web/Controllers/ProductController.cs" line="11" column="1" />
+      <Breakpoint file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" relfile="EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" line="24" column="1" />
+      <Breakpoint file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" relfile="EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" line="49" column="1" />
+      <Breakpoint file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" relfile="EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" line="137" column="1" />
+      <Breakpoint file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" relfile="EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" line="189" column="1" />
+      <Breakpoint file="/Users/andybryon/Projects/EPM-Mouser-Assessment/EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" relfile="EPM.Mouser.Interview.Tests/WarehouseApiTests.cs" line="222" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using EPM.Mouser.Interview.Data;
+using EPM.Mouser.Interview.Web.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddMvc().AddJsonOptions(opts =>
     opts.JsonSerializerOptions.Converters.Add(enumConverter);
 });
 builder.Services.SetupDiForWarehouse();
+builder.Services.AddTransient<ProductController>();
 
 var app = builder.Build();
 
